@@ -149,8 +149,17 @@ done
 
 Agora é necessário que você coloque o valor do seu BOT TOKEN API na variavel BOT_TOKEN= e o seu Chat id na variável CHAT_ID= 
 
+Para rodar seu script basta ir até o diretório do script e enviar no bash:
+
+```
+sudo ./nginx_monitor.sh
+```
+
 Pronto seu monitoramento do Nginx está feito !!
 
+Para acessar o seu logo basta enviar no bash:
 
-
+```
+vi /var/log/meu_script.log
+```
 
