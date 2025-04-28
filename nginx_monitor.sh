@@ -1,7 +1,5 @@
 #!/bin/bash
 
-DATA=$(date +%d/%m/%Y)
-HORA=$(date +%H:%M:%S)
 BOT_TOKEN=
 CHAT_ID=
 STATE_FILE="/tmp/server_status.state"
@@ -35,7 +33,9 @@ function send_message_to_telegram(){
 
 
 while true; do
-    
+
+    DATA=$(date +%d/%m/%Y)
+	HORA=$(date +%H:%M:%S)
 
     AVAILABLE=$(cat "$STATE_FILE")
 
