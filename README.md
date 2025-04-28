@@ -157,7 +157,7 @@ sudo ./nginx_monitor.sh
 
 Pronto seu monitoramento do Nginx está feito !!
 
-Para acessar o seu logo basta enviar no bash:
+Para acessar o seu log basta enviar no bash:
 
 ```
 vi /var/log/meu_script.log
