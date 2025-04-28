@@ -91,8 +91,6 @@ Créditos ao tutorial de criação de bot: https://medium.com/linux-shots/setup-
 ```
 #!/bin/bash # Escolhemos o bash no qual será executado o script
 
-DATA=$(date +%d/%m/%Y) # armazena em uma variável a data atual
-HORA=$(date +%H:%M:%S) # armazena em uma variável a hora atual
 BOT_TOKEN= # armazena em uma variável o API TOKEN do bot
 CHAT_ID= # armazena em uma variável o Chat Id do bot
 STATE_FILE="/tmp/server_status.state" # armazena em um arquivo o status final do servidor como available = true e unavailable = false
@@ -127,6 +125,8 @@ function send_message_to_telegram(){ # função que recebe uma mensagem de parâ
 
 while true; do # inicia um loop infinito para o script
     
+	DATA=$(date +%d/%m/%Y) # armazena em uma variável a data atual
+	HORA=$(date +%H:%M:%S) # armazena em uma variável a hora atual
 
     AVAILABLE=$(cat "$STATE_FILE") # inicia uma variavel available com o valor do state_file
 
